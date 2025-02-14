@@ -3,317 +3,862 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- UNICONS -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./assets.css">
-
-    <!-- FAVICON -->
-     <link rel="icon" href="./images/letter-a_6131208.png" type="image/png">
-
-
+    <script defer src="./main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Portfolio</title>
 </head>
-<body>
-
-<div class="container">
-
-    <!-- HEADER -->
-    <nav id="header">
-
-        <div class="nav-logo">
-            <p class="nav-name">AMR</p>
-            <span>.</span>
-        </div>
-
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav-list">
-                <li class="list-item">
-                    <a href="#home" class="nav-link" class="active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="list-item">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="list-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="list-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="nav-button">
-            <button class="btn">Download Cv <i class="uis uis-file-alt"></i> </button>
-        </div>
-
-        <div class="nav-menu-button">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-    </nav>
+<body style="overflow-x: hidden;">
     
-    <!-- MAIN -->
-    
-    <main class="wrapper">
-        <section class="featured-box" id="home">
-            <div class="featured-text">
 
-                <div class="featured-text-card">
-                    <span>Amr Mohamed</span>
-                </div>
 
-                <div class="featured-name">
-                    <p>I`m a <span class="typed-text"></span></p>
-                </div>
+    <nav class="navbar navbar-expand-lg bg-black navbar-dark sticky-top">
+      
+            <div class="container">
 
-                <div class="featured-info">
-                    <p>I`m a CS student with a passion for web development , my goal is to be able to design responsive , user-friendly and captivating modern websites as web-based solutions</p>
-                </div>
+              <a class="navbar-brand fs-3 fw-bolder border-bottom border-4 border-danger" href="#">ME</a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item hovereffect">
+                    <a class="nav-link active" aria-current="page" href="#home"><span class="pb-2">Home</span></a>
+                  </li>
 
-                <div class="featured-text-button">
-                    <button class="btn blue-btn">Hire Me</button>
-                    <button class="btn">Download Cv <i class="uil uil-file-alt"></i></button>
-                </div>
+                  <style>
+                    .hovereffect
+                    {
+                      position: relative;
+                    }
 
-                <div class="social-icons">
-                    <div class="icon"><i class="uil uil-instagram"></i></div>
-                    <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                    <div class="icon"><i class="uil uil-github-alt"></i></div>
-                    <div class="icon"><i class="uil uil-dribbble"></i></div>
-                </div>
+                    .hovereffect:hover a span
+                    {
+                      border-bottom: 2px solid red;
+                      transition: all 0.3s linear 0.01s;
+                    }
+                  </style>
 
-            </div>
-            
-            <div class="featured-image">
-                <div class="image">
-                    <img src="./images/443818900_122176023140027952_5358578830048395285_n.jpg" alt="no image">
-                </div>
-            </div>
+                  <li class="nav-item hovereffect">
+                    <a class="nav-link active" href="#about"><span class="pb-2">About</span></a>
+                  </li>
+                  <li class="nav-item hovereffect">
+                    <a class="nav-link active" href="#services"><span class="pb-2">Services</span></a>
+                  </li>
+                  <li class="nav-item hovereffect">
+                    <a class="nav-link active" href="#work"><span class="pb-2">Work</span></a>
+                  </li>
+                  <li class="nav-item hovereffect">
+                    <a class="nav-link active" href="#blog"><span class="pb-2">Blog</span></a>
+                  </li>
+                  <li class="nav-item dropdown sub-menu-1 d-none d-lg-block">
+                    <a class="nav-link dropdown-toggle active" href="#">
+                        More Data
+                    </a>
+                    <ul class="dropdown-menu rounded-0 bg-white main-menu">
+                      <li><a class="dropdown-item text-muted" href="#">My Contacts</a></li>
+                      <li><a class="dropdown-item text-muted" href="#">My Social</a></li>
 
-            <div class="scroll-icon-box">
-                <a href="#about" class="scroll-button">
-                    <i class="uil uil-mouse-alt"></i>
-                    <p>Scroll Down</p>
-                </a>
+                      <li class="dropdown-submenu dropdown-item dropdown">
+
+                        <a href="" class="dropdown-toggle active text-decoration-none text-danger" role="button" data-bs-toggle="dropdown">Drop me down</a>
+                        <ul class="dropdown-menu rounded-0">
+                          <li class="dropdown-item "><a href="" class="text-decoration-none text-muted">Where do i live ?</a></li>
+                          <li class="dropdown-item"><a href="" class="text-decoration-none text-muted">Do i work ?</a></li>
+                          <li class="dropdown-item"><a href="" class="text-decoration-none text-muted">My Social</a></li>
+                          <li class="dropdown-item"><a href="" class="text-decoration-none text-muted">My Contacts</a></li>
+                        </ul>
+                       
+                      </li>
+
+                      <style>
+                        .dropdown-submenu
+                        {
+                          position: relative;
+                        }
+
+                        .dropdown-submenu .dropdown-menu
+                        {
+                          position: absolute;
+                          right: 100%;
+                          top: 0;
+                          display: none;
+                          transition: 0.4s;
+                        }
+
+                        .dropdown-submenu:hover>.dropdown-menu
+                        {
+                          display: block;
+                        }
+                      </style>
+                      
+                      <li><hr class="dropdown-divider border-3"></li>
+                      <li><a class="dropdown-item text-muted" href="#">Something else here</a></li>
+                    </ul>
+
+                    <style>
+                      .sub-menu-1
+                      {
+                        position: relative;
+                      }
+
+                      .sub-menu-1 .main-menu
+                      {
+                        position: absolute;
+                        left: 0%;
+                        top:100%;
+                        display: none;
+                        
+                      }
+
+                      .sub-menu-1:hover .main-menu
+                      {
+                        transition: 0.4s;
+                        display: block;
+                      }
+                    </style>
+
+                  
+
+                  </li>
+
+                  <li class="nav-item hovereffect">
+                    <a class="nav-link active" href="#contact"><span class="pb-2">Contact</span></a>
+                  </li>   
               </div>
+
+              
+            </div>
+          </nav>
+       
+    
+    
+          
+          <main class="overflow-x-hidden">
+            <section class="home" id="home">
+              
+              <div class="background vh-100 d-flex align-items-center justify-content-center text-white text-center"
+              style="background: url(./imgs/hero-bg.jpg) center/cover no-repeat; width: 100%;">
+              <div class="my-text">
+                <h1 class="my-name lead">I`m Amr Mohamed</h1>
+                <p class="text-center">
+                  <span class="typed-text"></span>
+                    </p>
+                  </div>   
+                </div>
+                
+              </section>
+              
+              
+              <section class="about bg-light" id="about">
+                <div class="container shadow shadow-lg p-5 rounded-2">
+                  <div class="row justify-content-center gap-5">
+                    
+                    <div class="col-lg-6">
+                      
+                      <div class="row align-items-center gap-5 gap-lg-0">
+                        
+                        <div class="col-lg-5" style="margin-top: -12px;">
+                          <img src="./imgs/testimonial-2.jpg" alt="" class="rounded img-fluid" >
+                        </div>
+                        
+                    <div class="my-info col-lg-5">
+                    <p class="fw-medium fs-5"> <span class="fw-light fs-5 fw-normal text-nowrap"> <span class="text-nowrap"> <i class="bi bi-person-vcard-fill"></i> Name : </span><span class="fs-6 text-nowrap text-muted">Amr Mohamed</span></span></p>
+                    <p class="fw-medium fs-5"> <span class="fw-light fs-5 fw-normal text-nowrap"> <span class="text-nowrap"> <i class="bi bi-person-fill"></i> Profile : </span><span class="fs-6 text-nowrap text-muted">My Cv</span></span></p>
+                    <p class="fw-medium fs-5"><span class="fw-light fs-5 fw-normal  text-nowrap">  <span class="text-nowrap"> <i class="bi bi-telephone-fill"></i>  Phone : </span> </span><span class="fs-6 text-nowrap text-muted">+20 120 853 0100</span></span></p>
+                    <p class="fw-medium fs-5"><span class="fw-light fs-5 fw-normal text-nowrap">  <span class="text-nowrap"> <i class="bi bi-envelope-paper-fill"></i> E-mail : </span><span class="fs-6 text-nowrap text-muted">amr94945@gmail.com</span></span></p>
+                  </div>
+                </div>
+                
+                
+                <div class="bars pt-2 row">
+                  <div class="col-12">
+
+                    <p class="lead fw-bolder">Skills Progression Bars</p>
+
+                    <div class="mt-3">
+                      <p class="fw-bold">HTML <span class="fw-medium px-1" style="height: 13px; width: 13px;">88%</span> </p>
+                      <div class="progress rounded-0" style="height: 12px; margin-top: -10px;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 88%"></div>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <p class="fw-bold">CSS <span class="fw-medium px-1" style="height: 13px; width: 13px;">71%</span> </p>
+                      <div class="progress rounded-0" style="height: 12px; margin-top: -10px;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 71%"></div>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <p class="fw-bold">Java Script <span class="fw-medium px-1" style="height: 13px; width: 13px;">80%</span> </p>
+                      <div class="progress rounded-0" style="height: 12px; margin-top: -10px;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 80%"></div>
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <p class="fw-bold">Bootstrap <span class="fw-medium px-1" style="height: 13px; width: 13px;">60%</span> </p>
+                      <div class="progress rounded-0" style="height: 12px; margin-top: -10px;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 60%"></div>
+                      </div>
+                    </div>
+                  
+                </div>
+                
+              </div>
+            </div>
+              
+              
+              
+
+              
+              <div class="col-lg-5 text-muted">
+                <h2 class="fs-1 mb-5 text-black"><span class="border-bottom border-4 border-danger">About</span> Me</h2>
+                <p>Passionate about crafting seamless and engaging user interfaces, I am a Computer Science student dedicated to refining my skills in frontend development. I enjoy experimenting with UI design and animations, bringing websites to life through smooth and interactive elements.</p>
+                <p>Currently, I am working on developing a website's UI, focusing on navbar animations to enhance user experience. I love exploring new ways to improve website responsiveness and user interaction while maintaining clean and efficient code.</p>
+                <p>Beyond coding, I am actively expanding my vocabulary, learning new words to improve my communication skills. Whether it’s fine-tuning animations, optimizing layouts, or mastering new concepts, I am always eager to push my creative and technical boundaries.</p>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+
+        <section class="services bg-light" id="services">
+          <div class="container-fluid" style="padding-inline: 10%;">
+
+          
+          <div class="services-title text-center" style="position: relative;">
+            <h2 class="fs-1">services</h2>
+            <p class="lead fs-5">check out my great services. I bet you would want one. <br>If so !!!! Contact me </p>
+          </div>
+          
+          <div class="container-fluid p-lg-4 m-lg-4">
             
+            <div class="row gap-5 gap-lg-0">
+
+              <div class="col-lg-4">
+                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
+                  
+                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
+                      <i class="bi bi-briefcase"></i>
+                    </div>
+                    <h3 class="text-center pb-3 text-black fw-bold">Web Development</h3>
+                    <p>I can help you design , code , deploy your own website from a to z <br><br> Iam aware about the whole process </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
+                  
+                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
+                      <i class="bi bi-braces"></i>
+                    </div>
+                    <h3 class="text-center pb-3 text-black fw-bold">UI DESIGN</h3>
+                    <p>I can offer you some captivating UIs<br><br>I`m very good at this because my background is I was a designer </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
+                  
+                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
+                      <i class="bi bi-shield-lock-fill"></i>
+                    </div>
+                    <h3 class="text-center pb-3 text-black fw-bold">Security Services</h3>
+                    <p>I can deliever you some micro jobs about security and networks <br><br>I can do this almost for free</p>
+                  </div>
+                </div>
+              </div>
+
+             
+           
+            </div>
+            
+            <div class="row gap-5 gap-lg-0 mt-5">
+
+              <div class="col-lg-4">
+                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
+                  
+                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
+                      <i class="bi bi-motherboard"></i>
+                    </div>
+                    <h3 class="text-center pb-3 text-black fw-bold">Arduino Tasks</h3>
+                    <p>I can help you with your Arduino projects <br><br>I`m familiar with C , C++ <br>I worked on 5 projects before</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
+                  
+                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
+                      <i class="bi bi-bar-chart-fill"></i>
+                    </div>
+                    <h3 class="text-center pb-3 text-black fw-bold">Markting Services</h3>
+                    <p>I could deliver markting micro services like moderation in a competitive price <br><br>You wouldn`t find that anywhere else </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4">
+                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
+                  
+                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
+                      <i class="bi bi-bug-fill"></i>
+                    </div>
+                    <h3 class="text-center pb-3 text-black fw-bold">Fix Bugs</h3>
+                    <p>I could help you fix bugs with your code <br><br>That`s beacuse I have general computer science background</p>
+                  </div>
+                </div>
+              </div>
+
+             
+           
+            </div>
+            
+          </div>
+        </div>
+
+          <div class="experience row" style="padding-block: 150px; background: url(./imgs/counters-bg.jpg) fixed center/cover no-repeat; position: relative">
+
+            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center position-relative text-white">
+
+              <div class="icons">
+                <i class="bi bi-check-circle "></i>
+              </div>
+
+              <div class="icons-text">
+                <h4 class="fs-2 me-1">+4</h4>
+                <p>Projects Completed</p>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center position-relative text-white">
+
+              <div class="icons">
+                <i class="bi bi-calendar-date-fill"></i>
+              </div>
+
+              <div class="icons-text">
+                <h4 class="fs-2 me-1">+24</h4>
+                <p>Months of Experience</p>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center position-relative text-white">
+
+              <div class="icons">
+                <i class="bi bi-people-fill"></i>
+              </div>
+
+              <div class="icons-text">
+                <h4 class="fs-2 ms-1">+1</h4>
+                <p>Projects Completed</p>
+              </div>
+
+            </div>
+            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center position-relative text-white">
+
+              <div class="icons">
+                <i class="bi bi-award-fill"></i>
+              </div>
+
+              <div class="icons-text">
+                <h4 class="fs-2">+1</h4>
+                <p>Projects Completed</p>
+              </div>
+
+            </div>
+
+
+          </div>
         </section>
 
 
-    </main>
-    
-    <!-- ABOUT  -->
-     <section class="section" id="about">
+        <section class="portfolio p-lg-5" style="position: relative;" id="work">
 
-        <class class="top-header">
-            <h1>About Me</h1>
-        </class>
+          <div class="portfolio-text d-flex flex-column align-items-center text-center" style="padding-block: 29px;">
+            <h3 class="fs-1">Portfolio</h3>
+            <p class="text-muted lead">skim through my works</p>
+            <div style="width: 80px; border: red 3px solid;"></div>
+          </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>My Introduction</h3>
-                    <p>I am a passionate CS student pursuing a career in computer science , my main focus now is to improve my coding
-                       skills in order to get a job in Tech sector as a full-stack web Engineer
-                       i have a good knowlege with the web pillars (html , css , js) also iam into competitive programming and love problem solving in general
-                    </p>
 
-                    <div class="about-button">
-                        <button class="btn">Download Cv <i class="uil uil-import"></i></button>
-                    </div>
+
+          <div class="row gallery gap-5 gap-lg-0 mx-5" style="padding-top: 50px;">
+
+            <div class="col-lg-4">
+              <div class="card border-0 shadow-lg">
+
+                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
+                  <img src="./imgs/work-1.jpg" alt="" class="img-fluid w-100 h-100">
                 </div>
+
+                <div class="card-body d-flex justify-content-between pb-5">
+
+                 
+                    <div class="text-content">
+                      <h4>My First Project</h4>
+                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
+                    </div>
+
+                    <div class="button">
+                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
+                    </div>
+                 
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-4">
+              <div class="card border-0 shadow-lg">
+
+                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
+                  <img src="./imgs/work-2.jpg" alt="" class="img-fluid w-100 h-100">
+                </div>
+
+                <div class="card-body d-flex justify-content-between pb-5">
+
+                 
+                    <div class="text-content">
+                      <h4>My First Project</h4>
+                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
+                    </div>
+
+                    <div class="button">
+                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
+                    </div>
+                 
+                </div>
+
+              </div>
+
+            </div>
+            <div class="col-lg-4">
+              <div class="card border-0 shadow-lg">
+
+                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
+                  <img src="./imgs/work-3.jpg" alt="" class="img-fluid w-100 h-100">
+                </div>
+
+                <div class="card-body d-flex justify-content-between pb-5">
+
+                 
+                    <div class="text-content">
+                      <h4>My First Project</h4>
+                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
+                    </div>
+
+                    <div class="button">
+                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
+                    </div>
+                 
+                </div>
+
+              </div>
+
+            </div>
+          
+
             </div>
 
-            <div class="col" class="col-1">
-                <div class="skills-box">
+          
+          </div>
 
-                    <div class="skills-header">
-                        <h3>Front End</h3>
-                    </div>
+          <div class="row pt-5 gap-5 gap-lg-0 mx-5">
+            <div class="col-lg-4">
+              <div class="card border-0 shadow-lg">
 
-                    <div class="skills-list">
-                        <span>Html</span>
-                        <span>Css</span>
-                        <span>JS</span>
-                        <span>Type Script</span>
-                        <span>Bootstrap</span>
-                        <span>React Js</span>
-                        <span>Angular</span>
-                    </div>
-
+                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
+                  <img src="./imgs/work-4.jpg" alt="" class="img-fluid w-100 h-100">
                 </div>
 
-                <div class="skills-box">
+                <div class="card-body d-flex justify-content-between pb-5">
 
-                    <div class="skills-header">
-                        <h3>Back End</h3>
+                 
+                    <div class="text-content">
+                      <h4>My First Project</h4>
+                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
                     </div>
 
-                    <div class="skills-list">
-                        <span>Express.Js</span>
-                        <span>Mongo DB</span>
-                        <span>SQL</span>
-                        <span>Node.Js</span>
-                        <span>Dealing <br> with APIs</span>
-                        <span>Js</span>
+                    <div class="button">
+                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
                     </div>
-
+                 
                 </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card border-0 shadow-lg">
+
+                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
+                  <img src="./imgs/work-5.jpg" alt="" class="img-fluid w-100 h-100">
+                </div>
+
+                <div class="card-body d-flex justify-content-between pb-5">
+
+                 
+                    <div class="text-content">
+                      <h4>My First Project</h4>
+                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
+                    </div>
+
+                    <div class="button">
+                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
+                    </div>
+                 
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card border-0 shadow-lg">
+
+                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
+                  <img src="./imgs/work-6.jpg" alt="" class="img-fluid w-100 h-100">
+                </div>
+
+                <div class="card-body d-flex justify-content-between pb-5">
+
+                 
+                    <div class="text-content">
+                      <h4>My First Project</h4>
+                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
+                    </div>
+
+                    <div class="button">
+                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
+                    </div>
+                 
+                </div>
+
+              </div>
+
+            </div>
+
+            </div>
+          </div>
+
+        </section>
+
+
+        <section class="testemonials justify-content-center d-flex py-5" style="background: url(./imgs/overlay-bg.jpg) center/cover no-repeat; z-index: 1; position: relative;">
+          <div id="carouselExampleIndicators" class="carousel slide  text-center w-100" style="height: 500px;">
+            
+            <div class="carousel-inner">
+
+              <div class="carousel-item active ">
+
+                <div class="d-flex flex-column align-items-center justify-content-center">
+
+                  <div class="carousel-img" style="height: 150px; width: 150px; margin-top: 30px;">
+                    <img src="./imgs/download.jpeg" alt="none" class="img-fluid w-100 h-100 rounded-circle">
+                  </div>
+                  
+                  <div class="carousel-text">
+                    <h4 class="p-4"><span class="fs-1">Leo Messi</span></h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus explicabo at et amet modi perspiciatis incidunt nam dicta molestias numquam <br> ipsam expedita rem dolore nobis nesciunt quos architecto labore!</p>
+                    <div class="bullets d-flex justify-content-center">
+                      
+                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width: 70px; margin-right: -22px;"></i>
+                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width :70px; margin-left:  -22px ;"></i>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+
+                <div class="d-flex flex-column align-items-center justify-content-center">
+
+                  <div class="carousel-img" style="height: 150px; width: 150px; margin-top: 30px;">
+                    <img src="./imgs/41d3e9385e34ebc0e3ba.jpeg" alt="none" class="img-fluid w-100 h-100 rounded-circle">
+                  </div>
+                  
+                  <div class="carousel-text">
+                    <h4 class="p-4"><span class="fs-1">Vladimir Putin</span></h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus explicabo at et amet modi perspiciatis incidunt nam dicta molestias numquam <br> ipsam expedita rem dolore nobis nesciunt quos architecto labore!</p>
+                    <div class="bullets d-flex justify-content-center">
+                      
+                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width: 70px; margin-right: -22px;"></i>
+                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width :70px; margin-left:  -22px ;"></i>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+
+                <div class="d-flex flex-column align-items-center justify-content-center">
+
+                  <div class="carousel-img" style="height: 150px; width: 150px; margin-top: 30px;">
+                    <img src="./imgs/It's Becoming Clear That Trump Doesn't Know What___.jpeg" alt="none" class="img-fluid w-100 h-100 rounded-circle">
+                  </div>
+                  
+                  <div class="carousel-text">
+                    <h4 class="p-4"><span class="fs-1">Donald Trump</span></h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus explicabo at et amet modi perspiciatis incidunt nam dicta molestias numquam <br> ipsam expedita rem dolore nobis nesciunt quos architecto labore!</p>
+                    <div class="bullets d-flex justify-content-center">
+                      
+                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width: 70px; margin-right: -22px;"></i>
+                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width :70px; margin-left:  -22px ;"></i>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
               
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
-                <div class="skills-box">
+        </section>
 
-                    <div class="skills-header">
-                        <h3>Another Skills</h3>
+
+        <section class="blog my-5" id="blog">
+
+          
+          <div class="blog-text d-flex flex-column align-items-center text-center" style="padding:2%;">
+            <h3 class="fs-1">Blog</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+            <div style="width: 80px; border: red 3px solid;"></div>
+          </div>
+
+          <div class="cards row gap-5 gap-lg-0" style="padding-inline: 10%;">
+            
+            <div class="col-lg-4">
+
+              <div class="card border-0 shadow-lg">
+                
+               
+
+                <div class="card-body p-0">
+
+                  <div class="border-0 p-0 text-center topic-img overflow-hidden">
+                    <img src="./imgs/post-1.jpg" alt="" class="img-fluid w-100 h-100">
+                    <a href="" class="btn btn-danger rounded-1" style="margin-top: -30px;">Travel</a>
+                  </div>
+
+                  <div class="text p-4">
+                    <a href="" class="text-decoration-none"><h4 class="px-2 pb-3 fs-5">See more ideas about Travel</h4></a>
+                    <p class="px-2">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                  </div>
+                  
+                </div>
+
+                <div class="card-footer d-flex justify-content-between align-items-center border-4 border-primary">
+
+                  <div class="publisher d-flex align-items-center gap-3">
+                    <div class="them-img" style="width: 45px; height: 45px;">
+                      <img src="./imgs/Lionel Messi _ UEFA Champions League 2024_25.jpeg" alt="" class="img-fluid w-100 h-100 rounded-5">
                     </div>
-
-                    <div class="skills-list">
-                        <span>C++</span>
-                        <span>Python</span>
-                        <span>Problem Solving</span>
-                        <span>B1 English Skills</span>
-                        <span>Good Communication Skills</span>
+                    <div class="name">
+                      <a href="" class="text-decoration-none"><span> Leo Messi</span></a>
                     </div>
+                  </div>
+
+                  <div class="time">
+                    <span><i class="bi bi-clock"></i> 10 min</span>
+                  </div>
 
                 </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-4">
+
+              <div class="card border-0 shadow-lg">
+                
+               
+
+                <div class="card-body p-0">
+
+                  <div class="border-0 p-0 text-center topic-img overflow-hidden">
+                    <img src="./imgs/post-1.jpg" alt="" class="img-fluid w-100 h-100">
+                    <a href="" class="btn btn-danger rounded-1" style="margin-top: -30px;">Travel</a>
+                  </div>
+
+                  <div class="text p-4">
+                    <a href="" class="text-decoration-none"><h4 class="px-2 pb-3 fs-5">See more ideas about Travel</h4></a>
+                    <p class="px-2">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                  </div>
+                  
+                </div>
+
+                <div class="card-footer d-flex justify-content-between align-items-center border-4 border-primary">
+
+                  <div class="publisher d-flex align-items-center gap-3">
+                    <div class="them-img" style="width: 45px; height: 45px;">
+                      <img src="./imgs/Lionel Messi _ UEFA Champions League 2024_25.jpeg" alt="" class="img-fluid w-100 h-100 rounded-5">
+                    </div>
+                    <div class="name">
+                      <a href="" class="text-decoration-none"><span> Leo Messi</span></a>
+                    </div>
+                  </div>
+
+                  <div class="time">
+                    <span><i class="bi bi-clock"></i> 10 min</span>
+                  </div>
+
+                </div>
+                
+              </div>
+            </div>
+            <div class="col-lg-4">
+
+              <div class="card border-0 shadow-lg">
+                
+               
+
+                <div class="card-body p-0">
+
+                  <div class="border-0 p-0 text-center topic-img overflow-hidden">
+                    <img src="./imgs/post-1.jpg" alt="" class="img-fluid w-100 h-100">
+                    <a href="" class="btn btn-danger rounded-1" style="margin-top: -30px;">Travel</a>
+                  </div>
+
+                  <div class="text p-4">
+                    <a href="" class="text-decoration-none"><h4 class="px-2 pb-3 fs-5">See more ideas about Travel</h4></a>
+                    <p class="px-2">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                  </div>
+                  
+                </div>
+
+                <div class="card-footer d-flex justify-content-between align-items-center border-4 border-primary">
+
+                  <div class="publisher d-flex align-items-center gap-3">
+                    <div class="them-img" style="width: 45px; height: 45px;">
+                      <img src="./imgs/Lionel Messi _ UEFA Champions League 2024_25.jpeg" alt="" class="img-fluid w-100 h-100 rounded-5">
+                    </div>
+                    <div class="name">
+                      <a href="" class="text-decoration-none"><span> Leo Messi</span></a>
+                    </div>
+                  </div>
+
+                  <div class="time">
+                    <span><i class="bi bi-clock"></i> 10 min</span>
+                  </div>
+
+                </div>
+                
+              </div>
             </div>
 
-        </div>
-     </section>
 
-    <!-- PROJECTS  -->
-
-    <section class="section" id="projects">
-
-        <div class="top-header">
-            <h1>Projects</h1>
-        </div>
-
-        <div class="projects-container">
-
-            <div class="project-box">
-                <i class="uil uil-briefcase"></i>
-                <h3>Completed</h3>
-                <label>15+ Finshed Projects</label>
-            </div>
+          </div>
             
 
-            <div class="project-box">
-                <i class="uil uil-user"></i>
-                <h3>Users</h3>
-                <label>0+ Happy Clients</label>
+        </section>
+
+
+        <section id="contact" class="contact-me" style="padding: 10%; background: url(./imgs/overlay-bg.jpg) center/cover no-repeat; position: relative; z-index: 1;">
+          <div class="shadow-lg p-lg-5">
+
+            <div class="row justify-content-center shadow-lg bg-white mx-lg-1" style="position: relative;">
+              
+            <div class="label d-flex align-items-center justify-content-around pt-5 text-center">
+              <h3 class="fs-1"><span class=" border-bottom border-4 border-danger">Get in</span> touch</h3>
+              <h3 class="fs-1 d-none d-lg-block"><span class=" border-bottom border-4 border-danger">Get to</span> know me</h3>
             </div>
+            <div class="col-lg-6 px-5 pb-5 pt-4 h-100">
 
-
-            <div class="project-box">
-                <i class="uil uil-award"></i>
-                <h3>Experience</h3>
-                <label>0+ Experience in the field </label>
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- CONTACT  -->
-
-    <section class="section" id="contact">
-
-        <div class="top-header">
-            <h1>Get in Touch</h1>
-            <span>Do you have a project pops in your mind , Contact Me here</span>
-        </div>
-
-        <div class="row">
-
-            <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i> </h2>
-                    <p> <i class="uil uil-envelope"></i> Email : amr94945@gmail.com</p>
-                    <p> <i class="uil uil-phone"></i> Phone : +20 120 85 30 100</p>
+              <div class="messeage-form">
+                <div class="the-form ">
+                  <form action="" class="d-flex flex-column gap-4 align-items-center">
+                    <input type="text" class="form-control rounded-0" placeholder="Subject">
+                    <input type="text" class="form-control rounded-0" placeholder="Your Name">
+                    <input type="email" class="form-control rounded-0" placeholder="Your Email">
+                    <textarea class="form-control rounded-0" placeholder="Your Message" style="height: 170px; resize: none;"></textarea>
+                    <button type="submit" class="btn btn-danger rounded-0 text-center">Send</button>
+                  </form>
                 </div>
+              </div>
             </div>
 
-            <div class="col">
-                <div class="form-control">
 
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
 
-                    <div class="text-area">
-                        <textarea placeholder="Message Me"></textarea>
-                    </div>
+            <div class="col-lg-6 h-100 px-5 pb-3">
+              
+              <div class="summary pt-4">
+                <h3 class="fs-4 d-block d-lg-none mb-5"><span class=" border-bottom border-4 border-danger">Get to</span> know me</h3>
+                
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?
+                </p>
+              </div>
 
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i> </button>
-                    </div>
+              <div class="data pt-4 pb-2">
+                <p> <i class="bi bi-geo-alt-fill"></i> 329 WASHINGTON ST BOSTON, MA 02108</p>
+                <p> <i class="bi bi-telephone-fill"></i> +20 120 8530 100</p>
+                <p> <i class="bi bi-envelope-at-fill"></i> amr1111a15@gmail.com</p>
+              </div>
 
-                </div>
+              <div class="social fs-3 d-flex justify-content-start gap-4 footer-icons">
+                <div class="icon"><i class="bi bi-facebook"></i></div>
+                <div class="icon"><i class="bi bi-instagram"></i></i></div>
+                <div class="icon"><i class="bi bi-linkedin"></i></div>
+                <div class="icon"><i class="bi bi-twitter-x"></i></i></div>
+              </div>
+              
+
             </div>
+
+          </div>
         </div>
-    </section>
-
-    <!-- FOOTER -->
-     <footer>
-
-        <div class="top-footer">
-            <p>Amr Mohamed . </p>
-        </div>
-
-        <div class="middle-footer">
-            <ul class="footer-menu">
-
-                <li class="footer-menu-item">
-                    <a href="#home">Home</a>
-                </li>
-
-                <li class="footer-menu-item">
-                    <a href="#about">About</a>
-                </li>
-
-                <li class="footer-menu-item">
-                    <a href="#projects">Projects</a>
-                </li>
-
-                <li class="footer-menu-item">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-instagram"></i></div>
-            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-github-alt"></i></div>
-            <div class="icon"><i class="uil uil-dribbble"></i></div>
-        </div>
-
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;"> Amr Mohamed </a> - All Rights reserved - </p>
-        </div>
-
-     </footer>
+        </section>
 
 
-</div>
+        <section class="footer text-center text-white bg-danger p-5" style="position: relative;">
+          <p>© Copyright <a href="" class="text-decoration-none fs-5 fw-bold text-black">Amr Mohamed</a> All Rights Reserved </p>
+          <p>Designed by BootstrapMade</p>
+        </section>
 
 
-<!-- TYPING JS -->
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-<!-- SCROLL REVEAL -->
-<script src="https://unpkg.com/scrollreveal"></script>
 
 
-<!-- MAIN JS -->
-<script src="./main.js"></script>
-    
+
+        <section class="test">
+
+         
+          
+        </section>
+        
+        
+
+
+      </main>
+
+      
+      
+      
+      
+      
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 </body>
 </html>

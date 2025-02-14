@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , 'sans-serif';
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+main
+{
+    overflow-x: hidden !;
+}
+
+.nav-item
+{
+    font-size: 20px;
+    font-weight: 500;
+    padding-inline: 10px;
+}
+
+.my-name
+{
+    font-size: 90px;
+}
+
+.my-text
+{
+    height: 29%;
+}
+
+.my-text .typed-text
+{
+    font-size: 30px;
+    color: red;
+}
+
+.about
+{
+    padding: 10%;
+}
+
+.progress-bar
+{
+    background-color: gray;
+}
+
+.intro p span
+{
+    color: aqua;    
+}
+
+
+.services .card i
+{
+    font-size: 50px;
+}
+
+.services .card .card-body div
+{
+    border: solid red 11px; border-radius: 50%; height: 100px; width: 100px; margin-bottom: 20px;
+}
+
+.services .card .card-body div:hover
+{
+    background-color: red;
+    border-color :rgba(255, 255, 255, 0.815);
+    color: white !important;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.experience::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.453);
+}
+
+
+
+.experience  i
+{
+    font-size: 80px;
+}
+.experience div
+{
+    text-align: center;
+}
+
+.icons
+{
+    text-align: center;
+}
+
+
+.portfolio .card-header:hover img
+{
+    animation: scalling 0.5s ease-in-out 0.1s both normal;
+}
+
+.testemonials::before
+{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color :rgba(255, 0, 0, 0.453);
+}
+
+.contact-me::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    background-color :rgba(255, 0, 0, 0.453);
+}
+
+.card .button:hover i
+{
+    color: black !important;
+}
+
+.footer-icons .icon:hover i
+{
+    color: #BB2D3B;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@keyframes scalling 
+{ 
+    0%
+    {
+        transform: scale(1);
+    }
+    100%
+    {
+        transform: scale(1.2);
+    }
+
+
+}
+
+@media screen and (min-width:1400px)
+{
+    .my-info p span span
+    {
+        text-wrap: nowrap !important;
+    }
+}
+
+@media screen and (max-width:1400px)
+{
+    .my-info p span span
+    {
+        text-wrap: wrap !important; 
+    }
+}
+
+
+
+@media only screen and (max-width:478px) 
+{
+      .my-name
+      {
+        font-size: 40px;
+      }
+      .services-title h2
+      {
+        font-size: 40px;
+      }
+
+      .services-title p
+      {
+        font-size: 15px !important;
+      }
+
+      .my-info p span
+      {
+        font-size: 15px !important;
+      }
+
+    
+}
