@@ -3,862 +3,357 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="./main.js"></script>
+    <script defer src="https://kit.fontawesome.com/b5608b261f.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style-f.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Portfolio</title>
+
+    <script defer src="./main-f.js"></script>
+    <title>Document</title>
 </head>
-<body style="overflow-x: hidden;">
+<body lang="ar" dir="rtl">
     
+    <header id="header">
 
-
-    <nav class="navbar navbar-expand-lg bg-black navbar-dark sticky-top">
-      
+        <nav class="navbar navbar-expand-lg" style="background-color: #4395A8;">
             <div class="container">
-
-              <a class="navbar-brand fs-3 fw-bolder border-bottom border-4 border-danger" href="#">ME</a>
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              
-              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                  <li class="nav-item hovereffect">
-                    <a class="nav-link active" aria-current="page" href="#home"><span class="pb-2">Home</span></a>
+            
+            <a class="navbar-brand fs-2 fw-bolder" href="#">فرقان <i class="fa-solid fa-mosque ps-2 fs-1" style="color: white;"></i></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-3 align-items-center">
+                <li class="nav-item p-2 text-center">
+                    <a class="nav-link fw-bolder" href="#home">الصفحة الرئيسية</a>
                   </li>
-
-                  <style>
-                    .hovereffect
-                    {
-                      position: relative;
-                    }
-
-                    .hovereffect:hover a span
-                    {
-                      border-bottom: 2px solid red;
-                      transition: all 0.3s linear 0.01s;
-                    }
-                  </style>
-
-                  <li class="nav-item hovereffect">
-                    <a class="nav-link active" href="#about"><span class="pb-2">About</span></a>
-                  </li>
-                  <li class="nav-item hovereffect">
-                    <a class="nav-link active" href="#services"><span class="pb-2">Services</span></a>
-                  </li>
-                  <li class="nav-item hovereffect">
-                    <a class="nav-link active" href="#work"><span class="pb-2">Work</span></a>
-                  </li>
-                  <li class="nav-item hovereffect">
-                    <a class="nav-link active" href="#blog"><span class="pb-2">Blog</span></a>
-                  </li>
-                  <li class="nav-item dropdown sub-menu-1 d-none d-lg-block">
-                    <a class="nav-link dropdown-toggle active" href="#">
-                        More Data
-                    </a>
-                    <ul class="dropdown-menu rounded-0 bg-white main-menu">
-                      <li><a class="dropdown-item text-muted" href="#">My Contacts</a></li>
-                      <li><a class="dropdown-item text-muted" href="#">My Social</a></li>
-
-                      <li class="dropdown-submenu dropdown-item dropdown">
-
-                        <a href="" class="dropdown-toggle active text-decoration-none text-danger" role="button" data-bs-toggle="dropdown">Drop me down</a>
-                        <ul class="dropdown-menu rounded-0">
-                          <li class="dropdown-item "><a href="" class="text-decoration-none text-muted">Where do i live ?</a></li>
-                          <li class="dropdown-item"><a href="" class="text-decoration-none text-muted">Do i work ?</a></li>
-                          <li class="dropdown-item"><a href="" class="text-decoration-none text-muted">My Social</a></li>
-                          <li class="dropdown-item"><a href="" class="text-decoration-none text-muted">My Contacts</a></li>
+                  <li class="nav-item p-2">
+                      <a class="nav-link fw-bolder" href="#about">حول منصتنا</a>
+                    </li>
+                    <li class="nav-item dropdown p-2">
+                        <a class="nav-link fw-bolder" href="#">الخدمات</a>
+                        <ul class="dropdown-menu rounded-0 fs-6 border-1" style="border-color:#4395A8;">
+                            <li class="dropdown-item bg-transparent"><a href="" class="text-decoration-none text-muted">تحفيظ القرآن الكريم</a></li>
+                            <li class="dropdown-item bg-transparent"><hr class="dropdown-divider"></li>
+                            <li class="dropdown-item bg-transparent"><a href="" class="text-decoration-none text-muted text-wrap" >تدريس مناهج التربية الدينية الإسلامية</a></li>
+                            <li class="dropdown-item bg-transparent"><hr class="dropdown-divider"></li>
+                            <li class="dropdown-item bg-transparent"><a href="" class="text-decoration-none text-muted">دورات تعليمية و تثقيفية</a></li>
                         </ul>
-                       
-                      </li>
-
-                      <style>
-                        .dropdown-submenu
-                        {
-                          position: relative;
-                        }
-
-                        .dropdown-submenu .dropdown-menu
-                        {
-                          position: absolute;
-                          right: 100%;
-                          top: 0;
-                          display: none;
-                          transition: 0.4s;
-                        }
-
-                        .dropdown-submenu:hover>.dropdown-menu
-                        {
-                          display: block;
-                        }
-                      </style>
-                      
-                      <li><hr class="dropdown-divider border-3"></li>
-                      <li><a class="dropdown-item text-muted" href="#">Something else here</a></li>
-                    </ul>
-
-                    <style>
-                      .sub-menu-1
-                      {
-                        position: relative;
-                      }
-
-                      .sub-menu-1 .main-menu
-                      {
-                        position: absolute;
-                        left: 0%;
-                        top:100%;
-                        display: none;
-                        
-                      }
-
-                      .sub-menu-1:hover .main-menu
-                      {
-                        transition: 0.4s;
-                        display: block;
-                      }
-                    </style>
-
-                  
-
                   </li>
-
-                  <li class="nav-item hovereffect">
-                    <a class="nav-link active" href="#contact"><span class="pb-2">Contact</span></a>
-                  </li>   
-              </div>
-
-              
-            </div>
-          </nav>
-       
-    
-    
-          
-          <main class="overflow-x-hidden">
-            <section class="home" id="home">
-              
-              <div class="background vh-100 d-flex align-items-center justify-content-center text-white text-center"
-              style="background: url(./imgs/hero-bg.jpg) center/cover no-repeat; width: 100%;">
-              <div class="my-text">
-                <h1 class="my-name lead">I`m Amr Mohamed</h1>
-                <p class="text-center">
-                  <span class="typed-text"></span>
-                    </p>
-                  </div>   
-                </div>
-                
-              </section>
-              
-              
-              <section class="about bg-light p-lg-5 my-5" id="about">
-                <div class="container-lg container-xl container-xxl shadow shadow-lg p-5 rounded-1">
-                  <div class="row justify-content-center gap-5">
+                  <li class="nav-item p-2">
+                      <a class="nav-link fw-bolder" href="#">المدونة</a>
+                  </li>
+                  <li class="nav-item p-2">
+                      <button class="btn bg-white rounded-1 border-0 p-2"><span class="fw-medium" style="color: #000000;">سجل دخول الأن</span></button>
+                    </li>
                     
+                    
+                    
+                </ul>  
+            </div>
+            
+            
+        </div>
+    </nav>
+</header>
+
+
+
+      <main>
+        <section class="home py-5 px-lg-5" id="home" style="background-color: #ECFBF9;">
+           <div class="div container text-center text-lg-end pt-5">
+
+            <div class="row align-items-center gap-5 gap-lg-0 home-text">
+                <div class="col-lg-6">
+                    <p class="fw-bolder fs-5" style="color: #4395A8;">مرحبا بكم في منصة فرقان</p>
+                    <h1 class="py-4">إقرأ باسم ربك الذي خلق</h1>
+                    <p class="text-muted fw-bold">نحن أول منصة الكترونية تعليمية و تربوية لتحفيظ وتدريس مناهج</p>
+                    <p class="text-muted fw-bold">القرآن الكريم وعلومه ومناهج التربية الاسلامية عن بعد بشكل ممتع وترفيهي ي</p>
+                    <button class="p-3 text-light border-0 rounded-3 my-4">إكتشف أكثر</button>
+                </div>
+
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="home-img d-flex justify-content-center" style="height: 500px;">
+                        <img src="./images-f/img-3.png" alt="" class="h-100">
+                    </div>
+                </div>
+            </div>
+
+           </div>
+        </div>
+        </section>
+
+
+        <section class="about p-lg-5" id="about" style="background-color: #ECFBF9;">
+            <div class="container justify-content-center pb-5 mb-5" style="background-color: #D1F1F1; border-radius: 22% 6%;">
+
+                <div class="row justify-content-center align-items-center p-4 text-lg-end text-center">     
                     <div class="col-lg-6">
-                      
-                      <div class="row align-items-center gap-5 gap-lg-0">
-                        
-                        <div class="col-lg-5" style="margin-top: -12px;">
-                          <img src="./imgs/testimonial-2.jpg" alt="" class="rounded img-fluid" >
+                        <p class="fw-bolder fs-5" style="color: #4395A8;">معلومات عنا</p>
+                        <h1 class="py-4 fw-bolder">ابدأ معنا رحلة التلاوة والحفظ والتعلم الان</h1>
+                        <p class="text-muted fw-bold">لنبحر في علوم القرآن الكريم من خلال منصة الكترونية شيقة وممتعة لك ولاسرتك ونتابع سويا كل ما تعلمناه ونأكد على مراجعته من خلال نظام متابعة مدمج يذكرك بجداول الحفظ والمراجعة.</p>
+                        <button class="p-3 text-light border-0 rounded-3 my-4">إكتشف أكثر</button>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <img src="./images-f/about3.png" style="height: 550px;">
+                    </div>  
+                </div>
+            </div>
+
+        <div class="container p-lg-5">
+            <div class="row align-items-center gap-5 gap-lg-0">
+                <div class="col-lg-6">
+                    <div class="row gap-2 justify-content-center align-items-center">
+                        <div class="col-12 btn text-nowrap py-3 fw-bold rounded-4 w-75" style="background-color: #B4F0F7; color: #02A0A5;">الأحد : قرآن</div>
+                        <div class="col-12 btn text-nowrap py-3 me-5 fw-bold rounded-4 w-75" style="background-color: #F1E1DC; color: #DF8F73;">الأثنين : تسميع قرآن</div>
+                        <div class="col-12 btn text-nowrap py-3 fw-bold rounded-4 w-75" style="background-color: #D4DDFA; color: #6D64FF;">الثلاثاء : فقة و حديث</div>
+                        <div class="col-12 btn text-nowrap py-3 me-5 fw-bold rounded-4 w-75" style="background-color: #C3F3DE; color: #44A884;">الأربعاء : تسميع شامل</div>
+                        <div class="col-12 btn text-nowrap py-3 fw-bold rounded-4 w-75" style="background-color: #F1E4EC; color: #EE87BA;">الخميس : مراجعة عامة</div>
+                        <div class="col-12 btn text-nowrap py-3 me-5 fw-bold rounded-4 w-75" style="background-color: #B4F0F7; color: #419FA2;">الجمعة : اختبار شامل</div>
+                    </div>
+                </div>
+                
+                    <div class="col-lg-6 d-flex justify-content-center">
+                        <div class="d-flex justify-content-end">
+                            <div class="fw-bolder p-5 about-text" style="border-radius: 30% 6%; background-color: #D1F1F1;">
+                                <h3 class="fs-1 fw-bolder py-4 text-nowrap">أوقات المعلمون كثيرة</h3>
+                                <p class="text-muted">اختر من بين اكثر من 200 معلم باجمالي عدد حصص متاحة 500 موعد اسبوعي</p>
+                                <a href="" class="text-decoration-none">حدد جدول دراستك و حفظك و أنطلق الآن</a>
+                            </div>
                         </div>
+                    </div>    
+            </div>
+        </section>
+
+
+        <section class="services p-lg-5 my-lg-0 my-5 text-lg-end text-center pt-5" id="sevices" style="background-color:  #ECFBF9;">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-lg-6">
+
                         
-                    <div class="my-info col-lg-5">
-                    <p class="fw-medium fs-5"> <span class="fw-light fs-5 fw-normal text-nowrap"> <span class="text-nowrap"> <i class="bi bi-person-vcard-fill"></i> Name : </span><span class="fs-6 text-nowrap text-muted">Amr Mohamed</span></span></p>
-                    <p class="fw-medium fs-5"> <span class="fw-light fs-5 fw-normal text-nowrap"> <span class="text-nowrap"> <i class="bi bi-person-fill"></i> Profile : </span><span class="fs-6 text-nowrap text-muted">My Cv</span></span></p>
-                    <p class="fw-medium fs-5"><span class="fw-light fs-5 fw-normal  text-nowrap">  <span class="text-nowrap"> <i class="bi bi-telephone-fill"></i>  Phone : </span> </span><span class="fs-6 text-nowrap text-muted">+20 120 853 0100</span></span></p>
-                    <p class="fw-medium fs-5"><span class="fw-light fs-5 fw-normal text-nowrap">  <span class="text-nowrap"> <i class="bi bi-envelope-paper-fill"></i> E-mail : </span><span class="fs-6 text-nowrap text-muted">amr94945@gmail.com</span></span></p>
-                  </div>
+                        <div class="text-content">
+                            <span class="btn p-2 fw-bolder text-light" style="background-color: #02A0A5; border-radius:10px 10px 5px 20px ;">برامج الحفظ والتلاوة</span>
+                            <h2 class="py-4 fw-bolder">اختر معلمك الان وحدد اوقات دروسك.</h2>
+                            <p class="fw-bolder text-muted">المنصة الالكترونية الاولى لتعليم وتحفيظ القرآن الكريم وعلومه وتدريس المناهج الاسلامية المدرسية والتربوية والاخلاقية.</p>
+                        </div>
+
+                        <div class="d-flex justify-content-center table-responsive overflow-x-hidden">
+
+                            <table class="table-borderless text-center pt-4" style="border-spacing: 0 10px; border-collapse: separate;">
+                                <thead class="fw-bolder" style="background-color: #4395A8;">
+                               <tr class="">
+                                   <th class="p-4 text-light rounded-end-3">التقويم المدرسي</th>
+                                   <th class="p-4 text-light">فصل الخريف</th>
+                                   <th class="p-4 text-light rounded-start-3">فصل الربيع</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="">
+                                <tr style="background-color:white">
+                                    <td class="py-3 px-4 rounded-end-3">اليوم الأول</td>
+                                    <td class="py-3 px-4">1/2/2025</td>
+                                    <td class="py-3 px-4 rounded-start-3">2/2/2025</td>
+                                </tr>
+                                <tr style="background-color:white">
+                                    <td class="py-3 px-4 rounded-end-3">اليوم الأول</td>
+                                    <td class="py-3 px-4">1/2/2025</td>
+                                    <td class="py-3 px-4 rounded-start-3">2/2/2025</td>
+                                </tr>
+                                <tr style="background-color:white">
+                                    <td class="py-3 px-4 rounded-end-3">اليوم الأول</td>
+                                    <td class="py-3 px-4">1/2/2025</td>
+                                    <td class="py-3 px-4 rounded-start-3">2/2/2025</td>
+                                </tr> 
+                            </tbody>
+
+                        </table>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-6 d-flex justify-content-center d-none d-lg-block">
+                        <div style="height: 500px;">
+                            <img src="./images-f/img-1.png" alt="" style="height: 100%;">
+                        </div>
+                    </div>
                 </div>
+
+                <div class="row my-5 py-0 align-items-center justify-content-around">
+                    <div class="col-lg-6 d-flex justify-content-center">
+
+                        <div class="text-content pt-5 mt-5">
+                            <span class="btn p-2 fw-bolder text-light" style="background-color: #02A0A5; border-radius:10px 10px 5px 20px ;">برامج تعليم اركان الاسلام</span>
+                            <h2 class="py-4 fw-bolder">اختر من بين المناهج المدرسية</h2>
+                            <p class="fw-bolder text-muted py-5">المنصة الالكترونية الاولى لتعليم وتحفيظ القرآن الكريم وعلومه وتدريس المناهج الاسلامية المدرسية والتربوية والاخلاقية.</p>
+
+                            <div class="row text-center gap-5 justify-content-center pb-5">
+                                <div class="col-lg-3 col-md-3 bg-white" style="border-radius: 26% 7%;">
+                                    <p class="fs-1 fw-bolder my-0" style="color: #00A7D5;">+١٥</p>
+                                    <p class="fw-bolder text-muted">برامج تربوية جديدة</p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 bg-white" style="border-radius: 26% 7%;">
+                                    <p class="fs-1 fw-bolder my-0" style="color: #00A7D5;">+٢٢</p>
+                                    <p class="fw-bolder text-muted">برامج أخلاقية</p>
+                                </div>
+                                <div class="col-lg-3 col-md-3 bg-white" style="border-radius: 26% 7%;">
+                                    <p class="fs-1 fw-bolder my-0" style="color: #00A7D5;">+٩</p>
+                                    <p class="fw-bolder text-muted">تقويم آداب و سلوك</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <div style="height: 500px;">
+                            <img src="./images-f/img-2.png" alt="" style="height: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<div class="my-progress-content container py-5">
                 
-                
-                <div class="bars pt-2 row">
-                  <div class="col-12">
+    <div class="row align-items-center justify-content-between gap-5 gap-lg-0 gap-md-5">
 
-                    <p class="lead fw-bolder">Skills Progression Bars</p>
-
-                    <div class="mt-3">
-                      <p class="fw-bold">HTML <span class="fw-medium px-1" style="height: 13px; width: 13px;">88%</span> </p>
-                      <div class="progress rounded-0" style="height: 12px; margin-top: -10px;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-danger" style="width: 88%"></div>
-                      </div>
-                    </div>
-                    <div class="mt-3">
-                      <p class="fw-bold">CSS <span class="fw-medium px-1" style="height: 13px; width: 13px;">71%</span> </p>
-                      <div class="progress rounded-0" style="height: 12px; margin-top: -10px;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-danger" style="width: 71%"></div>
-                      </div>
-                    </div>
-                    <div class="mt-3">
-                      <p class="fw-bold">Java Script <span class="fw-medium px-1" style="height: 13px; width: 13px;">80%</span> </p>
-                      <div class="progress rounded-0" style="height: 12px; margin-top: -10px;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-danger" style="width: 80%"></div>
-                      </div>
-                    </div>
-                    <div class="mt-3">
-                      <p class="fw-bold">Bootstrap <span class="fw-medium px-1" style="height: 13px; width: 13px;">60%</span> </p>
-                      <div class="progress rounded-0" style="height: 12px; margin-top: -10px;" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar bg-danger" style="width: 60%"></div>
-                      </div>
-                    </div>
-                  
-                </div>
-                
-              </div>
-            </div>
-              
-              
-              
-
-              
-              <div class="col-lg-5 text-muted">
-                <h2 class="fs-1 mb-5 text-black"><span class="border-bottom border-4 border-danger">About</span> Me</h2>
-                <p>Passionate about crafting seamless and engaging user interfaces, I am a Computer Science student dedicated to refining my skills in frontend development. I enjoy experimenting with UI design and animations, bringing websites to life through smooth and interactive elements.</p>
-                <p>Currently, I am working on developing a website's UI, focusing on navbar animations to enhance user experience. I love exploring new ways to improve website responsiveness and user interaction while maintaining clean and efficient code.</p>
-                <p>Beyond coding, I am actively expanding my vocabulary, learning new words to improve my communication skills. Whether it’s fine-tuning animations, optimizing layouts, or mastering new concepts, I am always eager to push my creative and technical boundaries.</p>
-              </div>
-              
-            </div>
-          </div>
-        </section>
-
-        <section class="services bg-light py-5" id="services">
-          <div class="container-lg p-md-3">
-
-          
-          <div class="services-title text-center" style="position: relative;">
-            <h2 class="fs-1">services</h2>
-            <p class="lead fs-5">check out my great services. I bet you would want one. <br>If so !!!! Contact me </p>
-          </div>
-          
-          <div class="container-fluid p-lg-4 m-lg-4">
-            
-            <div class="row gap-5 gap-lg-0">
-
-              <div class="col-lg-4">
-                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
-                  
-                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
-                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
-                      <i class="bi bi-briefcase"></i>
-                    </div>
-                    <h3 class="text-center pb-3 text-black fw-bold">Web Development</h3>
-                    <p>I can help you design , code , deploy your own website from a to z <br><br> Iam aware about the whole process </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
-                  
-                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
-                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
-                      <i class="bi bi-braces"></i>
-                    </div>
-                    <h3 class="text-center pb-3 text-black fw-bold">UI DESIGN</h3>
-                    <p>I can offer you some captivating UIs<br><br>I`m very good at this because my background is I was a designer </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
-                  
-                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
-                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
-                      <i class="bi bi-shield-lock-fill"></i>
-                    </div>
-                    <h3 class="text-center pb-3 text-black fw-bold">Security Services</h3>
-                    <p>I can deliever you some micro jobs about security and networks <br><br>I can do this almost for free</p>
-                  </div>
-                </div>
-              </div>
-
-             
-           
-            </div>
-            
-            <div class="row gap-5 gap-lg-0 my-5">
-
-              <div class="col-lg-4">
-                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
-                  
-                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
-                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
-                      <i class="bi bi-motherboard"></i>
-                    </div>
-                    <h3 class="text-center pb-3 text-black fw-bold">Arduino Tasks</h3>
-                    <p>I can help you with your Arduino projects <br><br>I`m familiar with C , C++ <br>I worked on 5 projects before</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
-                  
-                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
-                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
-                      <i class="bi bi-bar-chart-fill"></i>
-                    </div>
-                    <h3 class="text-center pb-3 text-black fw-bold">Markting Services</h3>
-                    <p>I could deliver markting micro services like moderation in a competitive price <br><br>You wouldn`t find that anywhere else </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="card border-0 shadow shadow-lg rounded-5 px-2 py-4">
-                  
-                  <div class="card-body text-muted" style="display: flex; flex-direction: column; align-items: center;">
-                    <div class="" style="width: 120px; height: 120px; display: flex; justify-content: center; align-items: center;">
-                      <i class="bi bi-bug-fill"></i>
-                    </div>
-                    <h3 class="text-center pb-3 text-black fw-bold">Fix Bugs</h3>
-                    <p>I could help you fix bugs with your code <br><br>That`s beacuse I have general computer science background</p>
-                  </div>
-                </div>
-              </div>
-
-             
-           
-            </div>
-            
-          </div>
+        <div class="col-lg-6">
+            <span class="fw-bolder" style="color: #4395A8;">إدعمنا</span>
+            <h3 class="py-3 fw-bolder fs-1">اكفل طالب علم</h3>
+            <p class="py-1 text-muted fw-bolder">المنصة الالكترونية الاولى لتعليم وتحفيظ القرآن الكريم وعلومه<br> وتدريس المناهج الاسلامية المدرسية والتربوية والاخلاقية</p>
+            <button class="btn p-2 fw-bolder text-light"> اكفل طالب علم الآن</button>
         </div>
-
-          <div class="experience row" style="padding-block: 150px; background: url(./imgs/counters-bg.jpg) fixed center/cover no-repeat; position: relative">
-
-            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center position-relative text-white">
-
-              <div class="icons">
-                <i class="bi bi-check-circle "></i>
-              </div>
-
-              <div class="icons-text">
-                <h4 class="fs-2 me-1">+4</h4>
-                <p>Projects Completed</p>
-              </div>
-
-            </div>
-            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center position-relative text-white">
-
-              <div class="icons">
-                <i class="bi bi-calendar-date-fill"></i>
-              </div>
-
-              <div class="icons-text">
-                <h4 class="fs-2 me-1">+24</h4>
-                <p>Months of Experience</p>
-              </div>
-
-            </div>
-            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center position-relative text-white">
-
-              <div class="icons">
-                <i class="bi bi-people-fill"></i>
-              </div>
-
-              <div class="icons-text">
-                <h4 class="fs-2 ms-1">+1</h4>
-                <p>Projects Completed</p>
-              </div>
-
-            </div>
-            <div class="col-lg-3 col-sm-6 d-flex flex-column align-items-center justify-content-center position-relative text-white">
-
-              <div class="icons">
-                <i class="bi bi-award-fill"></i>
-              </div>
-
-              <div class="icons-text">
-                <h4 class="fs-2">+1</h4>
-                <p>Projects Completed</p>
-              </div>
-
-            </div>
-
-
-          </div>
-        </section>
-
-
-        <section class="portfolio p-lg-5 mb-5" style="position: relative;" id="work">
-
-          <div class="portfolio-text d-flex flex-column align-items-center text-center" style="padding-block: 29px;">
-            <h3 class="fs-1">Portfolio</h3>
-            <p class="text-muted lead">skim through my works</p>
-            <div style="width: 80px; border: red 3px solid;"></div>
-          </div>
-
-
-
-          <div class="row gallery gap-5 gap-lg-0 mx-lg-5 mx-md-5" style="padding-top: 50px;">
-
-            <div class="col-lg-4">
-              <div class="card border-0 shadow-lg">
-
-                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
-                  <img src="./imgs/work-1.jpg" alt="" class="img-fluid w-100 h-100">
-                </div>
-
-                <div class="card-body d-flex justify-content-between pb-5">
-
-                 
-                    <div class="text-content">
-                      <h4>My First Project</h4>
-                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
-                    </div>
-
-                    <div class="button">
-                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
-                    </div>
-                 
-                </div>
-
-              </div>
-
-            </div>
-            <div class="col-lg-4">
-              <div class="card border-0 shadow-lg">
-
-                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
-                  <img src="./imgs/work-2.jpg" alt="" class="img-fluid w-100 h-100">
-                </div>
-
-                <div class="card-body d-flex justify-content-between pb-5">
-
-                 
-                    <div class="text-content">
-                      <h4>My First Project</h4>
-                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
-                    </div>
-
-                    <div class="button">
-                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
-                    </div>
-                 
-                </div>
-
-              </div>
-
-            </div>
-            <div class="col-lg-4">
-              <div class="card border-0 shadow-lg">
-
-                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
-                  <img src="./imgs/work-3.jpg" alt="" class="img-fluid w-100 h-100">
-                </div>
-
-                <div class="card-body d-flex justify-content-between pb-5">
-
-                 
-                    <div class="text-content">
-                      <h4>My First Project</h4>
-                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
-                    </div>
-
-                    <div class="button">
-                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
-                    </div>
-                 
-                </div>
-
-              </div>
-
-            </div>
-          
-
-            </div>
-
-          
-          </div>
-
-          <div class="row pt-5 gap-5 gap-lg-0 mx-lg-5 m-md-5">
-            <div class="col-lg-4">
-              <div class="card border-0 shadow-lg">
-
-                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
-                  <img src="./imgs/work-4.jpg" alt="" class="img-fluid w-100 h-100">
-                </div>
-
-                <div class="card-body d-flex justify-content-between pb-5">
-
-                 
-                    <div class="text-content">
-                      <h4>My First Project</h4>
-                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
-                    </div>
-
-                    <div class="button">
-                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
-                    </div>
-                 
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="col-lg-4">
-              <div class="card border-0 shadow-lg">
-
-                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
-                  <img src="./imgs/work-5.jpg" alt="" class="img-fluid w-100 h-100">
-                </div>
-
-                <div class="card-body d-flex justify-content-between pb-5">
-
-                 
-                    <div class="text-content">
-                      <h4>My First Project</h4>
-                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
-                    </div>
-
-                    <div class="button">
-                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
-                    </div>
-                 
-                </div>
-
-              </div>
-
-            </div>
-
-            <div class="col-lg-4">
-              <div class="card border-0 shadow-lg">
-
-                <div class="card-header p-0 border-0 rounded-0 overflow-hidden">
-                  <img src="./imgs/work-6.jpg" alt="" class="img-fluid w-100 h-100">
-                </div>
-
-                <div class="card-body d-flex justify-content-between pb-5">
-
-                 
-                    <div class="text-content">
-                      <h4>My First Project</h4>
-                      <p class="pt-2" style="font-size: 13px;"> <span style="color: red;">Amr Mohamed</span> / 18 Sep 2025 </p>
-                    </div>
-
-                    <div class="button">
-                      <a href=""><i class="bi bi-plus-circle" style="font-size: 37px; color: red;"></i></a>
-                    </div>
-                 
-                </div>
-
-              </div>
-
-            </div>
-
-            </div>
-          </div>
-
-        </section>
-
-
-        <section class="testemonials justify-content-center d-flex py-5" style="background: url(./imgs/overlay-bg.jpg) center/cover no-repeat; z-index: 1; position: relative;">
-          <div id="carouselExampleIndicators" class="carousel slide  text-center w-100" style="height: 500px;">
-            
-            <div class="carousel-inner">
-
-              <div class="carousel-item active ">
-
-                <div class="d-flex flex-column align-items-center justify-content-center">
-
-                  <div class="carousel-img" style="height: 150px; width: 150px; margin-top: 30px;">
-                    <img src="./imgs/download.jpeg" alt="none" class="img-fluid w-100 h-100 rounded-circle">
-                  </div>
-                  
-                  <div class="carousel-text">
-                    <h4 class="p-4"><span class="fs-1">Leo Messi</span></h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus explicabo at et amet modi perspiciatis incidunt nam dicta molestias numquam <br> ipsam expedita rem dolore nobis nesciunt quos architecto labore!</p>
-                    <div class="bullets d-flex justify-content-center">
-                      
-                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width: 70px; margin-right: -22px;"></i>
-                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width :70px; margin-left:  -22px ;"></i>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-
-                <div class="d-flex flex-column align-items-center justify-content-center">
-
-                  <div class="carousel-img" style="height: 150px; width: 150px; margin-top: 30px;">
-                    <img src="./imgs/41d3e9385e34ebc0e3ba.jpeg" alt="none" class="img-fluid w-100 h-100 rounded-circle">
-                  </div>
-                  
-                  <div class="carousel-text">
-                    <h4 class="p-4"><span class="fs-1">Vladimir Putin</span></h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus explicabo at et amet modi perspiciatis incidunt nam dicta molestias numquam <br> ipsam expedita rem dolore nobis nesciunt quos architecto labore!</p>
-                    <div class="bullets d-flex justify-content-center">
-                      
-                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width: 70px; margin-right: -22px;"></i>
-                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width :70px; margin-left:  -22px ;"></i>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-
-                <div class="d-flex flex-column align-items-center justify-content-center">
-
-                  <div class="carousel-img" style="height: 150px; width: 150px; margin-top: 30px;">
-                    <img src="./imgs/It's Becoming Clear That Trump Doesn't Know What___.jpeg" alt="none" class="img-fluid w-100 h-100 rounded-circle">
-                  </div>
-                  
-                  <div class="carousel-text">
-                    <h4 class="p-4"><span class="fs-1">Donald Trump</span></h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus explicabo at et amet modi perspiciatis incidunt nam dicta molestias numquam <br> ipsam expedita rem dolore nobis nesciunt quos architecto labore!</p>
-                    <div class="bullets d-flex justify-content-center">
-                      
-                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width: 70px; margin-right: -22px;"></i>
-                      <i class="bi bi-dot" style="font-size: 70px; height: 70px; width :70px; margin-left:  -22px ;"></i>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
                 
-              
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        <div class="col-lg-6">
+            <div class="row justify-content-center align-items-center gap-3 gap-lg-0 gap-md-0 gap-sm-0">
 
-        </section>
-
-
-        <section class="blog my-5" id="blog">
-
-          
-          <div class="blog-text d-flex flex-column align-items-center text-center" style="padding:2%;">
-            <h3 class="fs-1">Blog</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
-            <div style="width: 80px; border: red 3px solid;"></div>
-          </div>
-
-          <div class="cards row gap-5 gap-lg-0 p-lg-5 p-md-5 p-sm-4">
-            
-            <div class="col-lg-4">
-
-              <div class="card border-0 shadow-lg">
-                
-               
-
-                <div class="card-body p-0">
-
-                  <div class="border-0 p-0 text-center topic-img overflow-hidden">
-                    <img src="./imgs/post-1.jpg" alt="" class="img-fluid w-100 h-100">
-                    <a href="" class="btn btn-danger rounded-1" style="margin-top: -30px;">Travel</a>
-                  </div>
-
-                  <div class="text p-4">
-                    <a href="" class="text-decoration-none"><h4 class="px-2 pb-3 fs-5">See more ideas about Travel</h4></a>
-                    <p class="px-2">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                  </div>
-                  
-                </div>
-
-                <div class="card-footer d-flex justify-content-between align-items-center border-4 border-primary">
-
-                  <div class="publisher d-flex align-items-center gap-3">
-                    <div class="them-img" style="width: 45px; height: 45px;">
-                      <img src="./imgs/Lionel Messi _ UEFA Champions League 2024_25.jpeg" alt="" class="img-fluid w-100 h-100 rounded-5">
+                <div class="col-lg-4 col-md-4 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+                    <div class="my-progress-1 my-progress">
+                        <div class="progress d-flex justify-content-center align-items-center">
+                            <span class="value">0%</span>
+                        </div>
                     </div>
-                    <div class="name">
-                      <a href="" class="text-decoration-none"><span> Leo Messi</span></a>
+                    <p class="fw-bolder py-3">حافظين القرآن</p>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+                    <div class="my-progress-2 my-progress">
+                        <div class="progress d-flex justify-content-center align-items-center">
+                            <span class="value">0%</span>
+                        </div>
                     </div>
-                  </div>
-
-                  <div class="time">
-                    <span><i class="bi bi-clock"></i> 10 min</span>
-                  </div>
-
+                    <p class="fw-bolder py-3">خاتمين 1/3 القرآن</p>
                 </div>
-                
-              </div>
-            </div>
-            <div class="col-lg-4">
-
-              <div class="card border-0 shadow-lg">
-                
-               
-
-                <div class="card-body p-0">
-
-                  <div class="border-0 p-0 text-center topic-img overflow-hidden">
-                    <img src="./imgs/post-1.jpg" alt="" class="img-fluid w-100 h-100">
-                    <a href="" class="btn btn-danger rounded-1" style="margin-top: -30px;">Travel</a>
-                  </div>
-
-                  <div class="text p-4">
-                    <a href="" class="text-decoration-none"><h4 class="px-2 pb-3 fs-5">See more ideas about Travel</h4></a>
-                    <p class="px-2">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                  </div>
-                  
-                </div>
-
-                <div class="card-footer d-flex justify-content-between align-items-center border-4 border-primary">
-
-                  <div class="publisher d-flex align-items-center gap-3">
-                    <div class="them-img" style="width: 45px; height: 45px;">
-                      <img src="./imgs/Lionel Messi _ UEFA Champions League 2024_25.jpeg" alt="" class="img-fluid w-100 h-100 rounded-5">
+                <div class="col-lg-4 col-md-4 col-sm-4 d-flex flex-column justify-content-center align-items-center">
+                    <div class="my-progress-3 my-progress">
+                        <div class="progress d-flex justify-content-center align-items-center">
+                            <span class="value">0%</span>
+                        </div>
                     </div>
-                    <div class="name">
-                      <a href="" class="text-decoration-none"><span> Leo Messi</span></a>
-                    </div>
-                  </div>
-
-                  <div class="time">
-                    <span><i class="bi bi-clock"></i> 10 min</span>
-                  </div>
-
-                </div>
-                
-              </div>
-            </div>
-            <div class="col-lg-4">
-
-              <div class="card border-0 shadow-lg">
-                
-               
-
-                <div class="card-body p-0">
-
-                  <div class="border-0 p-0 text-center topic-img overflow-hidden">
-                    <img src="./imgs/post-1.jpg" alt="" class="img-fluid w-100 h-100">
-                    <a href="" class="btn btn-danger rounded-1" style="margin-top: -30px;">Travel</a>
-                  </div>
-
-                  <div class="text p-4">
-                    <a href="" class="text-decoration-none"><h4 class="px-2 pb-3 fs-5">See more ideas about Travel</h4></a>
-                    <p class="px-2">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                  </div>
-                  
+                    <p class="fw-bolder py-3"> المتعلمون المتفاعلون</p>
                 </div>
 
-                <div class="card-footer d-flex justify-content-between align-items-center border-4 border-primary">
-
-                  <div class="publisher d-flex align-items-center gap-3">
-                    <div class="them-img" style="width: 45px; height: 45px;">
-                      <img src="./imgs/Lionel Messi _ UEFA Champions League 2024_25.jpeg" alt="" class="img-fluid w-100 h-100 rounded-5">
-                    </div>
-                    <div class="name">
-                      <a href="" class="text-decoration-none"><span> Leo Messi</span></a>
-                    </div>
-                  </div>
-
-                  <div class="time">
-                    <span><i class="bi bi-clock"></i> 10 min</span>
-                  </div>
-
-                </div>
-                
-              </div>
-            </div>
-
-
-          </div>
-            
-
-        </section>
-
-
-        <section id="contact" class="contact-me p-lg-5 p-md-5" style=" background: url(./imgs/overlay-bg.jpg) center/cover no-repeat; position: relative; z-index: 1;">
-          <div class="shadow-lg p-lg-5">
-
-            <div class="row justify-content-center shadow-lg bg-white mx-lg-1" style="position: relative;">
-              
-            <div class="label d-flex align-items-center justify-content-around pt-5 text-center">
-              <h3 class="fs-1"><span class=" border-bottom border-4 border-danger">Get in</span> touch</h3>
-              <h3 class="fs-1 d-none d-lg-block"><span class=" border-bottom border-4 border-danger">Get to</span> know me</h3>
-            </div>
-            <div class="col-lg-6 px-5 pb-5 pt-4 h-100">
-
-              <div class="messeage-form">
-                <div class="the-form ">
-                  <form action="" class="d-flex flex-column gap-4 align-items-center">
-                    <input type="text" class="form-control rounded-0" placeholder="Subject">
-                    <input type="text" class="form-control rounded-0" placeholder="Your Name">
-                    <input type="email" class="form-control rounded-0" placeholder="Your Email">
-                    <textarea class="form-control rounded-0" placeholder="Your Message" style="height: 170px; resize: none;"></textarea>
-                    <button type="submit" class="btn btn-danger rounded-0 text-center">Send</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-lg-6 h-100 px-5 pb-3">
-              
-              <div class="summary pt-4">
-                <h3 class="fs-4 d-block d-lg-none mb-5"><span class=" border-bottom border-4 border-danger">Get to</span> know me</h3>
-                
-                <p class="lead">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?
-                </p>
-              </div>
-
-              <div class="data pt-4 pb-2">
-                <p> <i class="bi bi-geo-alt-fill"></i> 329 WASHINGTON ST BOSTON, MA 02108</p>
-                <p> <i class="bi bi-telephone-fill"></i> +20 120 8530 100</p>
-                <p> <i class="bi bi-envelope-at-fill"></i> amr1111a15@gmail.com</p>
-              </div>
-
-              <div class="social fs-3 d-flex justify-content-start gap-4 footer-icons">
-                <div class="icon"><i class="bi bi-facebook"></i></div>
-                <div class="icon"><i class="bi bi-instagram"></i></i></div>
-                <div class="icon"><i class="bi bi-linkedin"></i></div>
-                <div class="icon"><i class="bi bi-twitter-x"></i></i></div>
-              </div>
-              
 
             </div>
-
-          </div>
         </div>
-        </section>
+    </div>
+</div>
 
 
-        <section class="footer text-center text-white bg-danger p-5" style="position: relative;">
-          <p>© Copyright <a href="" class="text-decoration-none fs-5 fw-bold text-black">Amr Mohamed</a> All Rights Reserved </p>
-          <p>Designed by BootstrapMade</p>
-        </section>
-
-
-
-
-
-        <section class="test">
-
-         
-          
-        </section>
-        
-        
-
-
+<div class="contact-container d-flex flex-column align-items-center justify-content-center p-5 shadow-lg m-2 m-lg-5 my-5 text-center bg-light" style="border-radius: 30% 6%;">
+    <h2 style="color: #4395A8;" class="fw-bolder py-4">تابعنا للحصول على معلومات أكثر</h2>
+    <p>المنصة الالكترونية الاولى لتعليم وتحفيظ القرآن الكريم وعلومه وتدريس المناهج الاسلامية<br> المدرسية والتربوية والاخلاقية</p>
+    
+    <form action="" class="py-4">
+        <div class="input-container p-1 bg-white rounded-5 border" style="border-color: #4395A8 !important;">
+            <div class="d-flex gap-2 justify-content-center align-items-center px-1">
+                <button class="btn rounded-5 text-light">تابعنا</button>
+                <input type="email" class="border-0 rounded-5 p-2" placeholder="أكتب بريدك الاكتروني ">
+            </div>
+        </div>
+    </form>
+</div>
+    
+</section>
       </main>
 
-      
-      
-      
-      
-      
-      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
+<footer  style="background-color: #4395A8;" class="rounded-top-5">
+    <ul class="list-unstyled text-muted justify-content-between py-5 mt-5 d-none d-lg-flex d-md-flex">
+        <li class="w-25">
+            <h4 class="fw-bolder text-black fs-5 py-3">تواصل معنا</h4>
+            <p class="py-2">نسعد باقتراحاتكم وآرائكم دائما ونأخذها بعين الاعتبار في تطوير خططنا القادمة</p>
+            <p class="py-2">اماكن تواجدنا : المملكة العربية السعودية , مصر , الامارات  , قطر ، الولايات المتحدة الأمريكية</p>
+            <p> الايميل : amr94945@gmail.com</p>
+        </li>
+
+        <li class="d-flex flex-column align-items-center w-25">
+            <h4 class="fw-bolder text-black fs-5 py-3">روابط مفيدة</h4>
+
+
+                <ul class="list-unstyled m-0 p-0">
+                    <li class="mt-3"><a href="" class="text-decoration-none text-muted fw-bold">معلومات عنا</a></li>
+                    <li class="my-3"><a href="" class="text-decoration-none text-muted fw-bold">خدمات</a></li>
+                    <li class="my-3"><a href="" class="text-decoration-none text-muted fw-bold">نصف السنة</a></li>
+                    <li class="my-3"><a href="" class="text-decoration-none text-muted fw-bold">أوقات الصلاة</a></li>
+                    <li class="my-3"><a href="" class="text-decoration-none text-muted fw-bold">تجربة الخدمة </a></li>
+                </ul>
+                
+        </li>
+        <li class="d-flex flex-column align-items-center w-25 text-center">
+            <h4 class="fw-bolder text-black fs-5 py-3">الخدمات</h4>
+
+
+            <ul class="list-unstyled m-0 p-0">
+                <li class="mt-3"><a href="" class="text-decoration-none text-muted fw-bold">عن برنامج <br>المدرسة الإسلامية</a></li>
+                <li class="my-3"><a href="" class="text-decoration-none text-muted fw-bold">من نحن ؟</a></li>
+                <li class="my-3"><a href="" class="text-decoration-none text-muted fw-bold">مهمتنا</a></li>
+                <li class="my-3"><a href="" class="text-decoration-none text-muted fw-bold">الشكاوى</a></li>
+            </ul>
+                
+        </li>
+
+
+
+        <li class="w-25">
+
+        <div class="logo py-3 d-flex align-items-center">
+            <div class="img-logo"><i class="fa-solid fa-mosque ps-2 fs-3" style="color: #ffffff;"></i></div>
+            <span class="fs-3 fw-bolder text-black">فرقان</span>
+        </div>
+
+        <div class="footer-text">
+            <p class="fw-medium">المنصة الالكترونية الاولى لتعليم وتحفيظ القرآن الكريم وعلومه وتدريس المناهج الاسلامية المدرسية والتربوية والاخلاقية</p>
+        </div>
+
+        <div class="social d-flex justify-content-start gap-4 py-3 p-1">
+            <div><i class="bi bi-messenger"></i></div>
+            <div><i class="bi bi-whatsapp"></i></div>
+            <div><i class="bi bi-telephone-fill"></i></div>
+            <div><i class="bi bi-twitter-x"></i></div>
+        </div>
+
+        </li>
+        
+
+    </ul>
+    
+    <div class="d-flex flex-column justify-content-center align-items-center p-4 shadow-lg">
+        <p class="fw-bolder">كل الحقوق محفوظة © فرقان 2025</p>
+        <p>Deisgned and Developed by Amr Mohamed</p>
+    </div>
+    
+    
+</footer>
+
+
+
+
+        <button class="scrollUpBtn" onclick="scrollToTop()"><i class="bi bi-caret-up"></i></button>
+
+
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </body>
 </html>
