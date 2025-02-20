@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Cairo:wght@200..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html
+{
+    overflow-x: hidden;
+}
+
+
+
+:root
+{
+    --maingreen:#4395A8;
+}
+
+
+button
+{
+    background-color: var(--maingreen) !important;
+}
+
+
+body
+{
+    font-family: 'Cairo';
+    overflow-x: hidden;
+    background-color: #ECFBF9;
+    position: relative;
+}
+
+.navbar-collapse
+{
+    font-weight: 630;
+}
+nav .dropdown
+{
+    position: relative;
+}
+
+nav .dropdown .dropdown-menu
+{
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    display: none;
+    transition: all 1s linear 0.4s;
+}
+
+nav .dropdown:hover .dropdown-menu
+{
+    display: block;
+}
+
+.dropdown-menu .dropdown-item:hover a
+{
+    color: var(--maingreen) !important;
+}
+
+.home h1
+{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.contact-container input
+{
+    box-shadow: none;
+    outline: none;
+}
+
+
+
+
+@media screen and (max-width:994px)
+{
+    .about , .about>.container
+    {
+        background-color: white !important;
+        border-radius: 0 !important;
+    }
+
+ 
+
+}
+
+@media screen and (max-width:430px)
+{
+    .about-text h3
+    {
+        font-size: 20px !important;
+    }
+
+    .about-text p , .about-text a
+    {
+        font-size: 15px !important;
+    }
+
+    .home-text h1
+    {
+        font-size: 50px;
+        padding-block: 30px !important;
+    }
+}
+
+
+
+.my-progress
+{
+    width: 120px;
+    height: 120px;
+    background-image: conic-gradient(#8379FE 270deg , #D6D3FF 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+}
+
+.progress
+{
+    width: calc(100% - 30%);
+    height: calc(100% - 30%);
+    border-radius: 50%;
+    background-color: #ECFBF9;
+    position: absolute;
+}
+
+.progress .value
+{
+    position: relative;
+    font-size: 35px;
+    font-weight: 500;
+    color: #8379FE ;
+}
+
+.my-progress-content .my-progress-2
+{
+    background-image: conic-gradient(#FF8F84 180deg,#FFDADC 0deg);
+}
+
+.my-progress-content .my-progress-2 .value
+{
+    color: #FF8F84 ;
+}
+
+
+.my-progress-content .my-progress-3
+{
+    background-image: conic-gradient(#0DC2F8 290deg,#b2e5ff 0deg);
+}
+
+.my-progress-content .my-progress-3 .value
+{
+    color: #0DC2F8;
+}
+
+footer .social i
+{
+    font-size: 26px;   
+}
+
+footer .social div:hover i
+{
+    cursor: pointer;
+    color: #000000;
+}
+
+footer ul ul li:hover a
+{
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.scrollUpBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #000000 !important;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+.scrollUpBtn:hover {
+    background-color: #0056b3;
+}
